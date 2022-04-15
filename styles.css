@@ -1,0 +1,82 @@
+main{
+    background-color: white;
+}
+
+a:link{
+    color: black;
+}
+
+td > div > a > img{
+    max-width: 25em;
+    width: 100%;
+    max-height: 12em;
+    height: 100%;
+}
+
+#featured > a > img{
+    max-width: 60em;
+    width: 100%;
+    max-height: 40em;
+    height: 100%;
+}
+
+#featured{
+    padding: 1em;
+}
+
+#featuredRow{
+    background-color: white;
+}
+
+#featuredText > h4, #featuredText > a > h3{
+    padding: 1em;
+    line-height: 1.5;
+}
+
+table{
+    display: flex;
+    justify-content: center;
+    margin-left: 17px;
+    margin-right: 5px;
+}
+
+td > div{
+    align-items: center;
+    padding: 1em;
+    background-color: white;
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+    max-width: 30em;
+    height: 18em;
+    text-overflow: ellipsis;
+    border-bottom: solid gray 1px;
+    border-left: solid gray 1px;
+}
+
+#featuredStoryTitle, #moreStories {
+    padding-left: 30px;
+    margin-bottom: 0em;
+    margin-top: 10px;
+}
+
+#trendsCol{
+    border-left-color: black;
+    border-left-width: 2px;
+    border-left-style: solid;
+}
+
+#newsCol{
+    background-color: white;
+}
+
+#storyCol{
+    display: flex;
+    justify-content: center;
+    padding: 0em;
+    background-color: white;
+}
+
+#trendsTitle{
+    text-align: center;
+}
