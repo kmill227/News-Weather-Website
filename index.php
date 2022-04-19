@@ -8,7 +8,8 @@
     <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="styles.css" rel=stylesheet>
     <link href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"  rel="stylesheet" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"/>
-    <script type="module" src="globalNews.js"></script>
+    <script type="module" src="js/globalNews.js"></script>
+    <?php require_once 'db/DAO.class.php'; ?>
   </head>
   <body>
       <?php require_once "header.php" ?>
@@ -69,6 +70,9 @@
           </div>
           <div class="col-md-3" id="trendsCol">
             <h2 id="trendsTitle">Trends</h2>
+            <?php 
+
+            ?>
           </div>
         </div>
       </main>

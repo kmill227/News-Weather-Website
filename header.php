@@ -1,8 +1,10 @@
+<?php require_once 'db/DAO.class.php'; ?>
+
 <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
 <div class="row">
     <div class="container-fluid">
         <div class="col-md-12">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
               <div class="container-fluid">
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
@@ -27,7 +29,8 @@
                       <div class="col-md-4">
                           <form class="d-flex">
                               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                              <button class="btn btn-outline-light" type="submit">Search</button>
+
+                              <button class="btn btn-outline-light" type="submit" onclick="submitSearch()">Search</button>
                           </form>
                       </div>
                   </div>
