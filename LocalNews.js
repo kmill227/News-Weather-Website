@@ -9,9 +9,10 @@ getLocalNews("North Canton, Ohio").then(result =>
 {
     for(var i = 0; i < 12; i++) // display first twelve results
     {
-        var cityDiv = document.getElementById('City');
+        var cityDiv = document.getElementById('City Row');
         var div = document.createElement('div');
         div.id = 'result' + i;
+        div.className = "col-sm-3";
         var a = document.createElement('a'); 
         var head = document.createElement('h2');
         a.href = result.articles[i].url;
@@ -31,10 +32,10 @@ getLocalNews("Ohio").then(result =>
 {
     for(var i = 0; i < 12; i++) // display first twelve results 
     {
-        var stateDiv = document.getElementById('State');
+        var stateDiv = document.getElementById('State Row');
         var div = document.createElement('div');
         div.id = 'result' + i;
- 
+        div.className = "col-sm-3";
         var head = document.createElement('h2');
         head.innerHTML = result.articles[i].title;
 
