@@ -1,4 +1,5 @@
 <?php require_once 'db/DAO.class.php'; ?>
+<script type="module" src="js/globalNews.js"></script>
 
 <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
 <div class="row">
@@ -26,12 +27,12 @@
                           </li>
                           </ul>
                       </div>
-                      <div class="col-md-4">
-                          <form class="d-flex">
-                              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <div class="col-md-4" id="searchForm">
+                           <form class="d-flex" method="post" action="http://localhost/HCIProject/globalSearch.php">
+                              <input class="form-control me-2" type="search" placeholder="Search" name="globalSearch" aria-label="Search">
 
-                              <button class="btn btn-outline-light" type="submit" onclick="submitSearch()">Search</button>
-                          </form>
+                              <button class="btn btn-outline-light" type="submit">Search</button>
+                            </form>
                       </div>
                   </div>
             </nav>

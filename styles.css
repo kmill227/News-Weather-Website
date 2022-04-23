@@ -49,9 +49,25 @@ td > div{
     text-overflow: ellipsis;
     max-width: 30em;
     height: 18em;
-    text-overflow: ellipsis;
     border-bottom: solid gray 1px;
     border-left: solid gray 1px;
+}
+
+#searchRow > a > img{
+    max-width: 30em;
+    height: 18em;
+    align-items: center;
+    padding: 1em;
+    background-color: lightblue;
+    white-space: normal;
+    text-overflow: ellipsis;
+}
+
+#textRow > a > h5{
+    
+    padding-top: 5em;
+    padding-bottom: 7.5em;
+    padding-left: 3em;
 }
 
 #featuredStoryTitle, #moreStories {
@@ -79,4 +95,8 @@ td > div{
 
 #trendsTitle{
     text-align: center;
+}
+
+#featuredStoryTitle, #moreStories {
+    font-family: 'Montserrat', sans-serif;
 }
