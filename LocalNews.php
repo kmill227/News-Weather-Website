@@ -2,26 +2,28 @@
 <html lang='en'>
     <head>
         <meta charset='UTF-8'>
+        <meta name ="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <script src='LocalNews.js'></script>
-        <link href="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.css" rel="stylesheet">
+        <link rel="stylesheet" href="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.css">
+        <link rel='stylesheet' href='LocalNews.css'>
         <title>
             Local News
         </title>
     </head>
     <body>
         <main>
-            <div class="container" id='City'>
+            <div class="container mt-5" id='City'>
                 <h1 id = 'City News'>
                     City News
                 </h1>
-                <div class="row" id='City Row'>
+                <div class="row" id='city-row'>
                 </div>
             </div>
-            <div class="container" id='State'>
+            <div class="container mt-5" id='State'>
                 <h1 id='State News'>
                     State News
                 </h1>
-                <div class="row" id="State Row">
+                <div class="row" id="state-row">
                 </div>
             </div>
         </main>
