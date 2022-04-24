@@ -15,7 +15,7 @@
   </head>
   <body>
       <?php require_once "header.php" ?>
-      <main>
+      <main id="globalNewsMain">
         <div class="row">
           <div class="col-md-9" id="newsCol">
             <div class = "row" id="featuredRow">

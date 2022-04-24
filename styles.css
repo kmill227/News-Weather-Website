@@ -1,8 +1,12 @@
 main{
-    background-color: lightblue;
+    background-color: rgba(22, 62, 248, 0.80);
 }
 
 a:link{
+    color: white;
+}
+
+a:hover{
     color: black;
 }
 
@@ -24,10 +28,6 @@ td > div > a > img{
     padding: 1em;
 }
 
-#featuredRow{
-    background-color: lightblue;
-}
-
 #featuredText > h4, #featuredText > a > h3{
     padding: 1em;
     line-height: 1.5;
@@ -43,7 +43,6 @@ table{
 td > div{
     align-items: center;
     padding: 1em;
-    background-color: lightblue;
     overflow: hidden;
     white-space: normal;
     text-overflow: ellipsis;
@@ -58,7 +57,6 @@ td > div{
     height: 18em;
     align-items: center;
     padding: 1em;
-    background-color: lightblue;
     white-space: normal;
     text-overflow: ellipsis;
 }
@@ -77,20 +75,21 @@ td > div{
 }
 
 #trendsCol{
+    background-color: rgba(22, 62, 248, 0.80);
     border-left-color: black;
     border-left-width: 2px;
     border-left-style: solid;
 }
 
 #newsCol{
-    background-color: lightblue;
+    background-color: rgba(22, 62, 248, 0.80);
 }
 
 #storyCol{
     display: flex;
     justify-content: center;
     padding: 0em;
-    background-color: lightblue;
+
 }
 
 #trendsTitle{
@@ -99,4 +98,13 @@ td > div{
 
 #featuredStoryTitle, #moreStories {
     font-family: 'Montserrat', sans-serif;
+}
+
+#globalNewsMain{
+    background-image: url(images/globalnewsBg.jpg);
+    background-size: 127%;
+}
+
+#globalNewsMain ~ h6, h5, h4, h3, h2, h1, p{
+    color: white;
 }
