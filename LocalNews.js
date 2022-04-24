@@ -16,6 +16,8 @@ getLocalNews("Cleveland, Ohio").then(result =>
         var div = document.createElement('div');
         div.className = 'col-sm-3';
 
+        var shadow = document.createElement('div');
+        shadow.className ="shadow p-3 mb-5 bg-body rounded";
 
         var card = document.createElement('div');
         card.className = 'card h-100'

@@ -1,6 +1,6 @@
 body
 {
-    background-color: #243447;
+    background-color:white;
 }
 .col-sm-3
 {
@@ -14,6 +14,7 @@ body
 {
     justify-content: center;
     text-align: center;
+    background-color:white;
 }
 
 a
@@ -23,7 +24,7 @@ a
 
 h1
 {
-    color:white;
+    color:black;
 }
 
 .card-title
@@ -35,6 +36,7 @@ img
 {
     max-height: 200px;
     object-fit: cover;
+
 }
 
 
