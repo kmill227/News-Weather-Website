@@ -1,6 +1,25 @@
 <?php require_once 'db/DAO.class.php'; ?>
 <script type="module" src="js/globalNews.js"></script>
+<script type="text/javascript">
+  function swap_icon(){
+    if ($.getElementById("login_logout").classList.contains("login")){
+      $.getElementById("login_logout").addClass("logout");
+      $.getElementById("login_logout").removeClass("login");
+    } else if ($.getElementById("login_logout").classList.contains("logout")) {
+      $.getElementById("login_logout").addClass("logout");
+      $.getElementById("login_logout").removeClass("login");
+    }
+  }
 
+  function log_out(){
+    webAuth.logout({
+      returnTo: 'index.php',
+      clientID: '1lV30YhZEWN0v4VXuk1OjupKzLyjTyqP'
+    });
+    window.location.href = "index.php";
+    swap_icon();
+  }
+</script>
 <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
 <div class="row">
     <div class="container-fluid">
