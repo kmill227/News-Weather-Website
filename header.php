@@ -17,10 +17,10 @@
                               <a class="nav-link active" aria-current="page" href="index.php">Home</a>
                           </li>
                           <li class="nav-item">
-                              <a class="nav-link" href="#">Local News</a>
+                              <a class="nav-link" href="LocalNews.php">Local News</a>
                           </li>
                           <li class="nav-item">
-                              <a class="nav-link" href="#">Weather</a>
+                              <a class="nav-link" href="weather.php">Weather</a>
                           </li>
                           <li class="nav-item">
                               <a class="nav-link" href="#">Edit Account</a>
