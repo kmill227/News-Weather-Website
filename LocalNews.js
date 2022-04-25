@@ -1,7 +1,7 @@
 
 function getLocation()
 {
-    pos = navigator.geolocation.getCurrentPosition(getCoords);
+    navigator.geolocation.getCurrentPosition(getCoords);
     
 }
 
