@@ -111,36 +111,36 @@
 </head>
 <body>
   <div class="wrapper">
-    <div class="container">
+    <form id="sign_in_form" class="container">
       <div class="tabs">
         <ul>
           <li class="sign_in_li">Sign in</li>
-          <li class="sign_up_li">Sign up</li>
+          <li id="regester" class="sign_up_li">Sign up</li>
         </ul>
       </div>
       <div class="sign_in">
         <div class="input_field">
-          <input type="text" placeholder="E-mail" class="input">
+          <input type="text" placeholder="E-mail" class="input" id="sign_in_email">
         </div>
         <div class="input_field">
-          <input type="password" placeholder="Password" class="input">
+          <input type="password" placeholder="Password" class="input" id="sign_in_pass">
         </div>
           <input type="submit" value="Sign in" class="btn">
       </div>
 
       <div class="sign_up">
         <div class="input_field">
-          <input type="text" placeholder="Username" class="input">
+          <input type="text" placeholder="Username" class="input" id="sign_up_name">
         </div>
         <div class="input_field">
-          <input type="text" placeholder="E-mail" class="input">
+          <input type="text" placeholder="E-mail" class="input" id="sign_up_email">
         </div>
         <div class="input_field">
-          <input type="password" placeholder="Password" class="input">
+          <input type="password" placeholder="Password" class="input" id="sign_up_pass">
         </div>
           <input type="submit" value="Sign up" class="btn">
       </div>
-    </div>
+    </form>
   </div>
 
   <script>
@@ -159,6 +159,15 @@
       $(".sign_up_li").removeClass("active");
       $(".sign_in").show();
       $(".sign_up").hide();
+    })
+
+    function sign_in() {
+      alert('Sign In Function Executed');
+    }
+
+    $.querySelector("#sign_in_form").addEventListener("click", function(e){
+	     e.preventDefault();
+	     sign_in();
     })
   </script>
 
