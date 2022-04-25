@@ -1,9 +1,4 @@
 
-function getLocation()
-{
-    navigator.geolocation.getCurrentPosition(getCoords);
-    
-}
 
 function getCoords(pos)
 {
@@ -109,7 +104,7 @@ async function getLocalNews(location)
     return await fetch(url).then(response => response.json());
 }
 
-getLocation();
+navigator.geolocation.getCurrentPosition(getCoords);
 
 
 
