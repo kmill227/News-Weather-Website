@@ -162,7 +162,21 @@
     })
 
     function sign_in() {
-      alert('Sign In Function Executed');
+      if($.getElementById("regester").classList.contains("active")){
+        webAuth.signup({
+          connection: 'Username-Password-Authentication',
+          username:   $.getElementById("sign_up_name").val(),
+          email:      $.getElementById("sign_up_email").val(),
+          password:   $.getElementById("sign_up_pass").val(),
+        }, function (err) {
+          if (err) return alert('Something went wrong: ' + err.message);
+          return alert('success signup without login!')
+        })
+      } else {
+        webAuth.login({
+          realm:    'Username-Password-Authentication',
+          username: $.getElementById("sign_in_email").val(),
+          password: $.getElementById("sign_in_pass").val(),
     }
 
     $.querySelector("#sign_in_form").addEventListener("click", function(e){
