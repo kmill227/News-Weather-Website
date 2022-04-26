@@ -1,3 +1,4 @@
+<!--- Robin Oster --->
 <?php
 require_once('config.php');
 try{

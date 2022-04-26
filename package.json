@@ -1,6 +1,7 @@
 {
   "type": "module",
   "dependencies": {
+    "auth0-js": "^9.19.0",
     "node-fetch": "^3.2.3"
   }
 }
