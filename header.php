@@ -1,6 +1,6 @@
 <?php require_once 'db/DAO.class.php'; ?>
-<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <script src="https://cdn.auth0.com/js/auth0/9.18/auth0.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
 <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
 <div class="row">
@@ -43,30 +43,33 @@
     </div>
 </div>
 
+<script type="module" src="js/globalNews.js"></script>
 <script type="text/javascript">
+      var webAuth = new auth0.WebAuth({
+        domain:       'dev-44si9vlt.us.auth0.com',
+        clientID:     '1lV30YhZEWN0v4VXuk1OjupKzLyjTyqP',
+        socpe:        'http://localhost'
+      });
+
   function swap_icon(){
     if (document.getElementById("login_logout").classList.contains("login")){
       document.getElementById("login_logout").addClass("logout");
       document.getElementById("login_logout").removeClass("login");
-      window.location.href = "Login_and_Registration.html";
-      console.log("beep");
     } else if (document.getElementById("login_logout").classList.contains("logout")) {
       document.getElementById("login_logout").addClass("logout");
       document.getElementById("login_logout").removeClass("login");
-      console.log("boop");
     }
   }
 
   function log_out(){
-
     webAuth.logout({
       returnTo: 'index.php',
       clientID: '1lV30YhZEWN0v4VXuk1OjupKzLyjTyqP'
     });
-  window.location.href = "index.php";
-  swap_icon();
+    window.location.href = "index.php";
+    swap_icon();
   }
 
   var login_logout = document.getElementById("login_logout");
-  login_logout.addEventListener("click", log_out);
+  login_logout.addEventListener("click", function(){window.location.href = "Login_and_Registration_Form.html";});
 </script>
