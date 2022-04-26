@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="login_admin.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Admin</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.auth0.com/js/auth0/9.18/auth0.min.js"></script>
+    <script type="text/javascript">
+      var webAuth = new auth0.WebAuth({
+        domain:       'dev-44si9vlt.us.auth0.com',
+        clientID:     '1lV30YhZEWN0v4VXuk1OjupKzLyjTyqP',
+        socpe:        'http://localhost'
+      });
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <form id="user_admin_form" class="container">
+        <div class="user_admin">
+          <div class="input_field">
+            <input type="text" placeholder="Username" class="input" id="user_admin_name">
+          </div>
+          <div class="input_field">
+            <input type="text" placeholder="E-mail" class="input" id="user_admin_email">
+          </div>
+          <div class="input_field">
+            <input type="password" placeholder="Password" class="input" id="user_admin_pass">
+          </div>
+            <input type="submit" value="Update" class="btn">
+        </div>
+      </form>
+    </div>
+    <script>
+      function update_user() {
+          webAuth.????({
+            connection: 'Username-Password-Authentication',
+            username:   $.getElementById("user_admin_name").val(),
+            email:      $.getElementById("user_admin_email").val(),
+            password:   $.getElementById("user_admin_pass").val(),
+          },function (err) {
+              if (err) return alert('Something went wrong: ' + err.message);
+              return alert('User information updated.')
+            })
+        swap_icon();
+         window.location.href = "index.php";
+     }
+
+      $.querySelector("#user_admin_form").addEventListener("click", function(e){
+	      e.preventDefault();
+	      update_user();
+      })
+
+      $(document).ready(function() {
+            //retrieve user data
+      })
+    </script>
+  </body>
+</html>
