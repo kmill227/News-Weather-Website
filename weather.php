@@ -48,27 +48,28 @@
 </div>
 <main>
   <div id="title">
-    Weather Page
   </div>
-  <div id="localWeather">
-    <p id="localtitle">
+  <div id="localglobal">
+    <div id="localWeather">
+      <p id="localtitle">
       Local Weather
-    </p>
-    <p id="localdata"></p>
-  </div>
-  <div id="worldWeather">
-    <p id="globaltitle">
+      </p>
+      <p id="localdata"></p>
+    </div>
+    <div id="worldWeather">
+      <p id="globaltitle">
       Global Weather
-    </p>
-    <p id="worlddata">
-    </p>
-    <p id="worlddata2">
-    </p>
-    <p id="worlddata3">
-    </p>
-    <p id="worlddata4">
-    </p>
-  </div>
+      </p>
+      <p id="worlddata">
+      </p>
+      <p id="worlddata2">
+      </p>
+      <p id="worlddata3">
+      </p>
+      <p id="worlddata4">
+      </p>
+    </div>
+</div>
   <div id = "weekforecast">
     <p id="weektitle">
     5 Day Forecast
@@ -87,3 +88,4 @@
 </main>
 </body>
 </html>
+
