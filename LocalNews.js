@@ -1,4 +1,4 @@
-
+// Author: Kaleb Miller
 
 function getCoords(pos)
 {
